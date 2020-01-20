@@ -30,7 +30,7 @@ import java.util.Scanner;
 로봇 청소기가 청소하는 칸의 개수를 출력한다.
 */
 
-public class Main4 {
+public class Main {
 	public static final int[][] moveDir = new int[][]{{-1, 0}, {0, 1}, {1, 0}, {0, -1}}; // 북 동 남 서
 	
 	static int N, M;
