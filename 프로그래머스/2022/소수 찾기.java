@@ -35,8 +35,6 @@ class Solution {
     boolean isPrime(int n){
         if(n <= 1)
             return false;
-        if(n <= 3)
-            return true;
         
         for(int d = 2; d <= n / 2; d++){
             if(n % d == 0)
