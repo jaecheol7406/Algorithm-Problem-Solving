@@ -1,0 +1,25 @@
+class Solution {
+    boolean solution(String s) {
+        int lCount = 0;
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            if(lCount == 0){
+                if(c == '('){
+                    lCount++;
+                } else {
+                    return false;
+                }
+            } else {
+                if(c == '('){
+                    lCount++;
+                } else {
+                    lCount--;
+                }
+            }
+        }
+        
+        if(lCount == 0)
+            return true;
+        return false;
+    }
+}
